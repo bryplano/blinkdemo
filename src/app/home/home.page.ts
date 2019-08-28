@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlinkId, RecognizerResultState } from '@ionic-native/blinkid/ngx';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private blinkId: BlinkId) { }
 
 }
